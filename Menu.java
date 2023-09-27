@@ -9,14 +9,18 @@ public class Menu {
         int[] gagnant = { 5, 12, 34, 56, 63, 75, 89, 92 };
         System.out.println("écrivez un nombre entre 1 et 100:");
         int nombre = scanner.nextInt();
+        boolean gagne = false;
         for (int n : gagnant) {
             if (nombre == n) {
-                System.out.print("vous avez gagné:");
-                System.out.print(montant * 10);
-            } else {
-                System.out.print("vous avez perdu");
+                gagne = true;
                 break;
             }
+        }
+        if (gagne){
+            System.out.print("vous avez gagné:");
+            System.out.print(montant * 10);
+        } else {
+            System.out.print("vous avez perdu");
         }
 
     }
