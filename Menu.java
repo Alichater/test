@@ -13,15 +13,17 @@ public class Menu {
         for (int n : gagnant) {
             if (nombre == n) {
                 gagne = true;
-                break;
+               break; 
             }
         }
         if (gagne){
-            System.out.print("vous avez gagné:");
+            System.out.print("vous avez gagné!");
             System.out.print(montant * 10);
         } else {
-            System.out.print("vous avez perdu");
-        }
+            System.out.print("vous avez perdu");}
+            System.out.println("voulez vous recommencez");
+           string reponse = scanner.string next();
+        
 
     }
 }
