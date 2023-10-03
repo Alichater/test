@@ -25,13 +25,14 @@ public class Menu {
                 System.out.print("vous avez perdu");
             }
 
-            System.out.println("voulez vous recommencez ou quitter le jeu ?");
+            System.out.println(" voulez vous recommencez ou quitter le jeu ?");
             restart = scanner.next();
             while (!restart.equals("recommencez") && !restart.equals("quitter")){
                 System.out.println("Réponse invalide");
                 restart = scanner.next();
             }
+            
         } while (restart.equals("recommencez"));
-
+        
     }
 }
